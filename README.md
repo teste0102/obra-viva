@@ -1,4 +1,4 @@
-# Casa Farmhouse: da planta do SketchUp ao vídeo realista
+# Obra Viva: da planta do SketchUp ao vídeo realista
 
 Vídeo de obra em time-lapse e giro de drone de uma casa de verdade (Southern Farmhouse), feito a partir da **geometria real** do projeto, com render no Blender e acabamento por IA no ComfyUI.
 
@@ -61,6 +61,19 @@ Os caminhos dos scripts assumem `~/ferramentas/blender` e `~/ferramentas/skp` no
 - Container sem internet: use `docker run --network host`.
 - Operários: o Wan os desenha grandes demais; a frase "six feet tall, heads reach two thirds of the wall height, far from the camera" no texto de cada trecho corrige a escala.
 - Em fusão (xfade) entre vistas diferentes da casa aparece "dupla exposição"; prefira corte seco quando a pose de câmera muda.
+
+## Ferramentas do serviço Obra Viva
+
+Todos os repositórios do serviço levam o prefixo `obra-viva` e os tópicos `obra-viva`, `construcao`, `casa`. Para vê-los juntos: <https://github.com/teste0102?tab=repositories&q=obra-viva>
+
+| Repositório | Para que serve (fork de) |
+|---|---|
+| [obra-viva](https://github.com/teste0102/obra-viva) | este: scripts, fluxo e lições |
+| [obra-viva-skppy](https://github.com/teste0102/obra-viva-skppy) | lê o `.skp` em Python (dantedex/skppy) |
+| [obra-viva-seedvr2](https://github.com/teste0102/obra-viva-seedvr2) | amplia/restaura vídeo no ComfyUI (numz/ComfyUI-SeedVR2_VideoUpscaler) |
+| [obra-viva-controlnet-aux](https://github.com/teste0102/obra-viva-controlnet-aux) | guias de profundidade e bordas (Fannovel16/comfyui_controlnet_aux) |
+| [obra-viva-hyperframes](https://github.com/teste0102/obra-viva-hyperframes) | monta vídeo por código: títulos e créditos (heygen-com/hyperframes) |
+| [obra-viva-capcut-cli](https://github.com/teste0102/obra-viva-capcut-cli) | edita projetos do CapCut por comando (renezander030/capcut-cli) |
 
 ## O que **não** está aqui
 
